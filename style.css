@@ -9,9 +9,8 @@ a{
     color: #fff;
 }
 
-body{
-
-
+a:hover{
+    text-decoration: underline;
 }
 
 /* header */
@@ -22,12 +21,13 @@ header{
     background-color: rgb(255, 115, 0);
     position: fixed;
     top: 0;
+    box-shadow: 2px 2px rgba(67, 67, 67, 0.39);
     
 }
 
 header .menu-logo{
     height: 100px;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,6 @@ header .menu-logo{
     list-style-type: none;
     margin-right: 7px;
     font-size: 18px;
-
 }
 
 .menu-logo img{
@@ -57,10 +56,35 @@ header .menu-logo{
 
 main{
     min-height: 800px;
-    width: 80%;
-    margin: 100px auto 0 auto;
-    background-color: aqua;
+    width: 70%;
+    margin: 120px auto 0 auto;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.cards .img img{
+    width: 350px;
+}
+
+/* main description */
+
+.description{
+    font-weight: bold;
+}
+
+.prize span:nth-child(1) {
+    color: #f00;
+}
+.prize span:nth-child(2){
+    text-decoration: line-through;
+    padding-left: 3px;
+}
+
 
 /* footer */
 
