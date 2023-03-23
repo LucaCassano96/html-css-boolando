@@ -22,11 +22,11 @@ header{
     position: fixed;
     top: 0;
     box-shadow: 2px 2px rgba(67, 67, 67, 0.39);
-    z-index: 2;
+    z-index: 100;
     
 }
 
-header .menu-logo{
+header .menu-logo, footer .base{
     height: 100px;
     width: 70%;
     margin: 0 auto;
@@ -58,7 +58,7 @@ header .menu-logo{
 main{
     min-height: 800px;
     width: 70%;
-    margin: 120px auto 0 auto;
+    margin: 120px auto 50px auto;
 }
 
 .container{
@@ -105,9 +105,75 @@ main{
     cursor:pointer;
 }
 
+
+/* label */
+
+.cards{
+    position: relative;
+}
+
+.img label{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 3;
+}
+
+.img label span{
+    padding: 2px 8px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.img label .red{
+    background-color: #f00;
+}
+
+.img label .green{
+ background-color: rgb(0, 121, 0);
+}
+
+/* heart */
+
+.img .heart{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 3;
+    color: #f00;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.img:hover .heart{
+    display: inline;
+}
+
+
+
 /* footer */
 
 footer{
     height: 100px;
-    background-color: rgb(69, 69, 69);
+    background-color: rgb(37, 37, 37);
+
+}
+
+.bottom a, .bottom div{
+    color: #fff;
+} 
+
+.bottom div{
+    font-size: 18px;
+}
+
+.bottom a{
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.bottom i{
+    margin: 3px
 }
